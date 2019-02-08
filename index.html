@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="javascript.js"></script>
     <title>Psychic Game</title>
 </head>
 <body>
-    <div>
+    <div class="jumbotron text-center">
         <h1>The Psychic Game</h1>
-        <p>Guess what letter I am thinking of?</p>
-        <p>Wins:&nbsp;1</p>
-        <p>Losses:&nbsp;0</p>
-        <p>Guesses Left:&nbsp;10</p>
-        <p>Your Guesses so far:&nbsp; a, b c, d</p>
+        <h2>Guess what letter I am thinking of?</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 text-right">
+                <p>Wins:&nbsp;<span id="wins-text"></span></p>
+                <p>Losses:&nbsp;<span id="losses-text"></span></p>
+                <p>Guesses Left:&nbsp;<span id="guessleft-text"></span></p>
+                <p>Your Guesses so far:&nbsp;<span id="guessedsofar-text"></span></p>
+            </div>
+            <div class="col-md-6 text-left">
+                <p class="text-center" id="my-thought"></p>
+                <h1 class="text-center" id="the-letter"></h1>
+                <!-- <h6 class="text-center" id="try-again">Press a letter</h6> -->
+            </div>
+        </div>
+        <div row calss="col-md-12 text-right" id="button">
+                <button class="btn btn-primary" type="submit">Play again</button>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>    
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
